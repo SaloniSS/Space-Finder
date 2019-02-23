@@ -13,3 +13,5 @@ app/vendor/
 
 app/public/stylesheet
 app/application/vendor
+
+app/*.json

@@ -8,7 +8,7 @@ class Pages extends CI_Controller {
 		$this->data = [];
 	}
 
-	private function login() {
+	private function verifyLogin() {
 		// $this->user_id = $this->session->user_id;
 		// if (!$this->user_id) {
 		// 	header('Location: /');
@@ -23,19 +23,23 @@ class Pages extends CI_Controller {
 
 	public function landing()
 	{
-		// $this->data['google_signin_client_id'] = $this->config->item('login')->web->client_id;
 		$this->load->view('landing', $this->data);
 	}
 
+	public function login() {
+		$this->data['google_signin_client_id'] = $this->config->item('login')->web->client_id;
+		$this->load->view('login', $this->data);
+	}
+
 	public function form() {
-		// $this->login();
+		// $this->verifyLogin();
 
 		// $this->data['head'] = $this->load->view('components/head', $this->data, TRUE);
 		// $this->load->view('form', $this->data);
 	}
 
 	public function results() {
-		// $this->login();
+		// $this->verifyLogin();
 
 		// $userAnswers = $this->db->get_where('question', ['user_id' => $this->user_id])->result()[0];
 		// unset($userAnswers->user_id);

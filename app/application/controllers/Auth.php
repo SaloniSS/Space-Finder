@@ -10,36 +10,41 @@ class Auth extends CI_Controller {
 
 	public function login()
 	{
-		// $id_token = $this->input->post('id_token');
+		$id_token = $this->input->post('id_token');
+		$redirect_to = $this->input->get('redirect_to');
 
-		// if ($id_token) {
-		// 	$client = new Google_Client();
-		// 	$payload = $client->verifyIdToken($id_token);
-		// 	if ($payload) {
-		// 		$data = [
-		// 			"user_id" => $payload['sub'],
-		// 			"name" => $payload['given_name'],
-		// 			"email" => $payload['email']
-		// 		];
+		if (!isset($redirect_to)) {
+			$redirect_to = '/';
+		}
 
-		// 		$this->session->set_userdata([
-		// 			"user_id" => $data["user_id"],
-		// 		]);
+		if ($id_token) {
+			$client = new Google_Client();
+			$payload = $client->verifyIdToken($id_token);
+			if ($payload) {
+				$data = [
+					"user_id" => $payload['sub'],
+					"name" => $payload['given_name'],
+					"email" => $payload['email']
+				];
 
-		// 		$user = $this->db->get_where('user', ['user_id' => $data["user_id"]]);
-		// 		if (!$user) {
-		// 			$this->db->insert('user', $data);
-		// 		} else {
-		// 			$this->db->replace('user', $data);
-		// 		}
+				$this->session->set_userdata([
+					"user_id" => $data["user_id"],
+				]);
 
-		// 		header('Location: /form');
-		// 	} else {
-		// 		header('Location: /');
-		// 	}
-		// } else {
-		// 	header('Location: /');
-		// }
+				$user = $this->db->get_where('user', ['user_id' => $data["user_id"]]);
+				if (!$user) {
+					$this->db->insert('user', $data);
+				} else {
+					$this->db->replace('user', $data);
+				}
+
+				header('Location: ' . $redirect_to);
+			} else {
+				header('Location: /');
+			}
+		} else {
+			header('Location: /');
+		}
 
 	}
 

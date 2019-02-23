@@ -52,12 +52,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // $route['test/(:any)'] = 'test/view/$1';
 
 $route['default_controller'] = 'pages/landing';
+$route['login'] = 'pages/login';
 // $route['form'] = 'pages/form';
 // $route['results'] = 'pages/results';
 // $route['exit'] = 'pages/exit';
 
-// $route['logout'] = 'auth/logout';
-// $route['login'] = 'auth/login';
+$route['auth/logout'] = 'auth/logout';
+$route['auth/login'] = 'auth/login';
 
 // $route['store'] = 'data/store';
 
