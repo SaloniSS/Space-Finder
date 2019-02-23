@@ -17,7 +17,7 @@
 		};
 	</script>
 </head>
-<body id="login">
+<body id="login" style="background-image: url(<?= asset('bitmap/background1.png') ?>);">
 	<main>
 	
 		<img id="logo" src="<?= asset('bitmap/utdlogo1.png') ?>">

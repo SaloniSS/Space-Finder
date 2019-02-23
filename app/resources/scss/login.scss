@@ -1,11 +1,24 @@
 @import '_main.scss';
 
 #login {
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	min-height: 100vh;
+	max-width: 100vw;
+
 	main {
+
+		margin: 1rem;
+		padding: 2rem;
+		background: white;
+		position: absolute;
+		top: calc((100vh - 28rem)/2);
 
 		> * {
 			width: 100%;
-			padding: 0 2rem;
 			margin: 1rem 0;
 			display: block;
 		}
