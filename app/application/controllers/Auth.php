@@ -28,21 +28,18 @@ class Auth extends CI_Controller {
 					"display_name" => strstr($payload['email'], '@', true),
 				];
 
-				var_dump($data);
+				$this->session->set_userdata([
+					"user_id" => $data["user_id"],
+				]);
 
+				$user = $this->db->get_where('user', ['user_id' => $data["user_id"]]);
+				if (!$user) {
+					$this->db->insert('user', $data);
+				} else {
+					$this->db->replace('user', $data);
+				}
 
-				// $this->session->set_userdata([
-				// 	"user_id" => $data["user_id"],
-				// ]);
-
-				// $user = $this->db->get_where('user', ['user_id' => $data["user_id"]]);
-				// if (!$user) {
-				// 	$this->db->insert('user', $data);
-				// } else {
-				// 	$this->db->replace('user', $data);
-				// }
-
-				// header('Location: ' . $redirect_to);
+				header('Location: ' . $redirect_to);
 			} else {
 				header('Location: /');
 			}
