@@ -1,0 +1,46 @@
+@import '_main.scss';
+
+#login {
+	main {
+
+		> * {
+			width: 100%;
+			padding: 0 2rem;
+			margin: 1rem 0;
+			display: block;
+		}
+
+		#logo {
+			
+		}
+
+		#gSignInWrapper {
+			#gSignIn {
+				background: $utdOrange;
+				color: white;
+				padding: 1rem;
+				text-align: center;
+				cursor: pointer;
+				font-weight: 700;
+				letter-spacing: 0.25rem;
+				transition: all 0.35s;
+
+				> * {
+					vertical-align: middle;
+					padding-right: 1rem;
+				}
+
+				.icon {
+					display: inline-block;
+					font-size: 3rem;
+				}
+
+				.text {
+					display: inline-block;
+					font-size: 1.5rem;
+				}
+			}
+		}
+
+	}
+}

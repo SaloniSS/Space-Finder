@@ -2,7 +2,9 @@
 <html>
 <head>
 	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?= style_link_tag('main') ?>
+	<?= style_link_tag('login') ?>
 	<script src="https://apis.google.com/js/api:client.js"></script>
 	<script>
 		var googleUser = {};
@@ -16,12 +18,15 @@
 		};
 	</script>
 </head>
-<body id="landing">
+<body id="login">
 	<main>
+	
+		<img id="logo" src="<?= asset('bitmap/utdlogo1.png') ?>">
+
 		<div id="gSignInWrapper">
 			<div id="gSignIn">
 				<i class="icon material-icons">arrow_forward</i><!--
-				--><span class="text">Begin</span>
+				--><span class="text">Login</span>
 			</div>
 		</div>
 

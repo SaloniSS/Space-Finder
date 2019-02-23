@@ -5,7 +5,7 @@ class Auth extends CI_Controller {
 
 	public function __construct() {
 		parent::__construct();
-		// $this->CLIENT_ID = $this->config->item('login')->web->client_id;
+		$this->CLIENT_ID = $this->config->item('login')->web->client_id;
 	}
 
 	public function login()
@@ -50,8 +50,8 @@ class Auth extends CI_Controller {
 
 	public function logout()
 	{
-		// $data['google_signin_client_id'] = $this->CLIENT_ID;
-		// $this->session->unset_userdata(['user_id']);
-		// $this->load->view('logout', $data);
+		$data['google_signin_client_id'] = $this->CLIENT_ID;
+		$this->session->unset_userdata(['user_id']);
+		$this->load->view('logout', $data);
 	}
 }

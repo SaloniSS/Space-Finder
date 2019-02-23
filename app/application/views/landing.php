@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title></title>
-	<?= style_link_tag('main') ?>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<?= style_link_tag('landing') ?>
 </head>
 <body id="landing">
 	<main>
