@@ -12,3 +12,4 @@ app/!application/logs/.htaccess
 app/vendor/
 
 app/public/stylesheet
+app/application/vendor
