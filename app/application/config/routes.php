@@ -61,5 +61,7 @@ $route['logout'] = 'auth/logout';
 
 // $route['store'] = 'data/store';
 
+$route['test/(:any)'] = 'test/view/$1';
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

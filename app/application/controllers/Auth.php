@@ -25,7 +25,7 @@ class Auth extends CI_Controller {
 				$data = [
 					"user_id" => $payload['sub'],
 					"name" => $payload['name'],
-					"display_name" => $payload['email']
+					"display_name" => strstr($payload['email'], '@', true),
 				];
 
 				var_dump($data);
