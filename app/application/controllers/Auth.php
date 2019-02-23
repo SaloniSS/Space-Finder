@@ -13,7 +13,7 @@ class Auth extends CI_Controller {
 		$id_token = $this->input->post('id_token');
 		$redirect_to = $this->input->get('redirect_to');
 
-		if (!isset($redirect_to)) {
+		if (!isset($redirect_to) || ($redirect_to == 'null')) {
 			$redirect_to = '/';
 		}
 
