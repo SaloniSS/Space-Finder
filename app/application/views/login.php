@@ -21,11 +21,11 @@
 	<main>
 	
 		<img id="logo" src="<?= asset('bitmap/utdlogo1.png') ?>">
+		<span id="google-text">Login powered by <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"></span>
 
 		<div id="gSignInWrapper">
-			<div id="gSignIn">
-				<i class="icon material-icons">arrow_forward</i><!--
-				--><span class="text">Login</span>
+			<div id="gSignIn" class="button orange-button">
+				<span class="text">Login</span><i class="icon material-icons">arrow_forward</i>
 			</div>
 		</div>
 

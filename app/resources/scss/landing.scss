@@ -1,1 +1,30 @@
 @import '_main.scss';
+
+#landing {
+
+
+	main {
+		margin: 2rem;
+		padding: 2rem;
+
+		#logo {
+			width: 100%;
+		}
+
+		.heading {
+			text-align: center;
+		}
+
+		#description {
+			text-align: justify;
+			margin: 2rem 0;
+		}
+
+		#button-container {
+			margin-top: 4rem;
+			text-align: center;
+		}
+
+	}
+
+}

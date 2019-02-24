@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Material+Icons|PT+Sans);
+@import url(https://fonts.googleapis.com/css?family=Material+Icons|PT+Sans|Merriweather);
 
 $utdOrange: #c75b12;
 $utdGreen: #008542;
@@ -10,4 +10,37 @@ $utdGreen: #008542;
 
 body {
 	margin: 0;
+}
+
+.heading {
+	font-family: "Merriweather", serif;
+}
+
+.button {
+	padding: 0.5rem 1rem;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+
+	font-size: 1.5em;
+
+	> * {
+		vertical-align: middle;
+		padding-left: 0.5rem;
+	}
+
+	.icon {
+		display: inline-block;
+		font-size: 1.5em;
+		margin-right: -0.25rem;
+	}
+
+	.text {
+		display: inline-block;
+	}
+}
+
+.orange-button {
+	background: $utdOrange;
+	color: white;
 }

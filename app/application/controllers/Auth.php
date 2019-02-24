@@ -14,7 +14,7 @@ class Auth extends CI_Controller {
 		$redirect_to = $this->input->get('redirect_to');
 
 		if (!isset($redirect_to) || ($redirect_to == 'null')) {
-			$redirect_to = '/';
+			$redirect_to = '/find';
 		}
 
 		if ($id_token) {
