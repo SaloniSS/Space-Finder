@@ -7,10 +7,10 @@
 <body id="form">
 
 
-<form id="mainForm" method="POST" action="store">
+<form id="form1" method="POST" action=/test/form2>
 
     <h1>Find your study space!</h1>
-    
+
     <span class="field">
 		<label>Room privacy</label>
 		<span><input type="radio" name="privacy" value="0" checked><label>Open</label></span>

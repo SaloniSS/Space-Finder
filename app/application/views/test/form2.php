@@ -7,7 +7,7 @@
 <body id="form">
 
 
-<form id="mainForm" method="POST" action="store">
+<form id="form2" method="POST" action="store">
 
 <h1>Find your study space!</h1>
 

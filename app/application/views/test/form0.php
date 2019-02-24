@@ -7,7 +7,7 @@
 <body id="form">
 
 
-<form id="mainForm" method="POST" action="store">
+<form id="form0" method="POST" action=/test/form1>
 
 	<h1>Find your study space!</h1>
 	
@@ -17,7 +17,7 @@
 		<span><input type="radio" name="check" value="1"><label>Check out</label></span>
 	</span>
 	
-	<input type="submit" name="" value="Next">
+	<input type="submit"  name="" value="Next">
 
 </form>
 
