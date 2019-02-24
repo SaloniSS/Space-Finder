@@ -1,0 +1,28 @@
+@import '_main.scss';
+
+#event {
+	main {
+		padding: 0 1rem;
+	}
+
+	#event-form {
+		.field {
+			margin: 1rem 0;
+		}
+		input[type=text], textarea{
+			width: 100%;
+			border: solid 1px black;
+			padding: 0.5rem;
+			font-size: 1rem;
+		}
+		fieldset {
+			outline: none;
+			border: 0;
+		}
+		.radio-field {
+			> * {
+				display: inline-block;				
+			}
+		}
+	}
+}

@@ -1,0 +1,69 @@
+@import '_main.scss';
+
+#title-bar {
+	height: 4rem;
+	width: 100%;
+	display: block;
+	position: fixed;
+
+	background-color: $utdOrange;
+	color: white;
+
+	> * {
+		height: 100%;
+		display: inline-block;
+		vertical-align: top;
+		position: absolute;
+	}
+
+	.left {
+		> * {
+			vertical-align: middle;
+			display: inline-block;
+			line-height: 4rem;
+		}
+		
+		.logo {
+			height: 100%;
+			margin-left: -1.5rem;
+			transform: scale(0.9);
+		}
+
+		.title {
+			padding-left: 0.75rem;
+			font-weight: bold;
+			font-size: 1.125rem;
+		}
+	}
+
+	.right {
+		right: 0.75rem;
+
+		> * {
+			line-height: 4rem;
+			vertical-align: middle;
+			display: inline-block;
+		}
+
+		.name {
+
+		}
+
+		.logout {
+			color: inherit;
+			text-decoration: none;
+
+			span {
+				padding: 0.25rem 0.5rem;
+				background-color: $utdGreen;
+				border: solid 0.125rem white;
+				border-radius: 1.5rem;
+			}
+		}
+	}
+}
+
+#title-bar-space {
+	height: 4rem;
+	display: block;
+}

@@ -1,0 +1,37 @@
+@import '_main.scss';
+
+#room {
+	main {
+		padding: 0 2rem;
+	}
+
+	.options {
+		.option {
+			margin: 1rem 0;
+		}
+
+		.button {
+			font-size: 1rem;
+			padding: 0.5rem;
+			text-decoration: none;
+		}
+
+		.error {
+			vertical-align: middle;
+			font-size: 2rem;
+			margin-right: 0.5rem;
+		}
+	}
+
+	#event {
+		padding: 1rem;
+		background-color: $utdGreen;
+		color: white;
+
+		> * {
+			margin: 0;
+		}
+	}
+	
+
+}
