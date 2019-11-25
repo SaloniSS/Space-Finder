@@ -1,0 +1,39 @@
+@import '_main.scss';
+
+#building {
+	main {
+		padding: 0 1rem;
+	}
+
+	.roomContainer {
+		padding: 0 1rem;
+		margin: 1rem 0;
+
+		.rooms {
+			margin-bottom: 2rem;
+
+			.room {
+				color: white;
+				display: block;
+				text-decoration: none;
+				padding: 0.75rem 0;
+				margin-bottom: 1rem;
+
+				> * {
+					display: block;
+					width: 100%;
+					padding: 0rem 0.75rem;
+					white-space: nowrap; 
+					overflow: hidden;
+					text-overflow: ellipsis;
+					opacity: 0.75;
+				}
+
+				.name {
+					font-size: 1.25rem;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

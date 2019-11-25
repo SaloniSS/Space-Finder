@@ -1,0 +1,19 @@
+@import '_main.scss';
+
+#my-room {
+	padding: 1rem;
+	text-align: center;
+	background-color: #75A47A;
+}
+
+.myRoomBtn {
+	background-color: white;
+	color: $utdGreen;
+	padding: 0.5rem 1rem;
+	display: inline-block;
+	margin: 0 0.5rem;
+	margin-top: 0.5rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}

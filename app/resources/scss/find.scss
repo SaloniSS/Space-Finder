@@ -1,0 +1,57 @@
+@import '_main.scss';
+
+#find {
+	main {
+		padding: 0 1rem;
+	}
+
+	.eventContainer {
+		background-color: rgba(0,0,0,0.1);
+		padding: 1rem;
+		margin: 1rem 0;
+
+		.events {
+			margin-bottom: 2rem;
+
+			.event {
+				color: white;
+				background-color: $utdGreen;
+				display: block;
+				text-decoration: none;
+				padding: 0.75rem 0;
+				margin-bottom: 1rem;
+
+				> * {
+					display: block;
+					width: 100%;
+					padding: 0rem 0.75rem;
+					font-size: 1.25rem;
+					white-space: nowrap; 
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+
+				.icon {
+					font-size: 2rem;
+				}
+			}
+
+			.no-event {
+				color: black;
+				background-color: rgba(0,0,0,0.1);
+				padding: 1rem;
+			}
+		}
+	}
+
+
+	.next {
+		margin: 1rem 1rem;
+		.text {
+			font-size: 1.5rem;
+		}
+		.icon {
+			font-size: 2rem;
+		}
+	}
+}

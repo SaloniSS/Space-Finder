@@ -57,12 +57,17 @@ $route['login'] = 'pages/login';
 $route['find'] = 'pages/find';
 $route['find/building'] = 'pages/allBuildings';
 $route['find/building/(:any)'] = 'pages/building/$1';
+$route['find/room/(:any)'] = 'pages/room/$1';
+$route['create_event/room/(:any)'] = 'pages/createEvent/$1';
 
 $route['auth/login'] = 'auth/login';
 $route['auth/logout'] = 'auth/logout';
 $route['logout'] = 'auth/logout';
 
-// $route['store'] = 'data/store';
+$route['checkin/(:any)'] = 'store/checkinPage/$1';
+$route['join/(:any)'] = 'store/joinPage/$1';
+$route['checkout'] = 'store/checkoutPage';
+$route['edit_event/room/(:any)'] = 'store/editEventPage/$1';
 
 $route['test/(:any)'] = 'test/view/$1';
 
